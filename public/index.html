@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Workout Tracker</title>
 </head>
+
 <body>
-    
+    <div class="container mx-auto">
+        <div class="jumbotron shadow">
+            <h1 class="display-4">Workout Tracker</h1>
+        </div>
+        <div class="row mx-auto" style="justify-content: center;">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Work-out</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="input-group mb-3">
+                            <select class="custom-select" id="inputGroupSelect02">
+                                <option selected>Choose Your Workout</option>
+                                <option value="1">Bike</option>
+                                <option value="2">Run</option>
+                                <option value="3">Swim</option>
+                                <option value="3">Walk</option>
+                            </select>
+                            <div class="input-group-append">
+                                <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                            </div>
+                        </div>
+                        <li class="list-group-item">Distance(mi.):<input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"></li>
+                        <li class="list-group-item">Time: <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row border shadow">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <button id="continueBtn" class="col">
+                                <h1>Continue Previous Workout</h1>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <button id="newBtn" class="col">
+                                <h1>Start New Workout</h1>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./server.js"></script>
+    <script src="./App.js"></script>
 </body>
+
 </html>
