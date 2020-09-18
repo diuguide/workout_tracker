@@ -1,4 +1,4 @@
 
 module.exports = {
-    Workout: require('./workoutRENAME')
+    Workout: require('./workout')
 }
